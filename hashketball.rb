@@ -190,6 +190,7 @@ def find_all_players()
   return all_players_array
 end
 
+
 def big_shoe_player()
   biggest_seen_player = {:shoe => 0}
   find_all_players().each do |look_at_player|
