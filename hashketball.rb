@@ -249,7 +249,6 @@ def winning_team()
   end 
 end 
 
-
 def player_with_longest_name()
   return find_all_players().keys.sort_by {|n| n.length}.pop()
 end 
