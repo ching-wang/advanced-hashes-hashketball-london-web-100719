@@ -215,12 +215,6 @@ def most_points_scored()
   return most_points_seen_player[:name]
 end 
 
-def player_with_longest_name()
-  find_all_players().sort_by do |key, value|
-    key.length
-  end
-end 
-
 
 def home_total_points()
   home_sum_array = []
