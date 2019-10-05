@@ -244,5 +244,5 @@ end
 
 
 def player_with_longest_name()
-  return find_all_players().keys.sort_by {|n| n.length}.pop()
+  return find_all_players().map{|p| p[:name]}.sort_by {|n| n.length}.pop()
 end 
