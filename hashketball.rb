@@ -190,7 +190,6 @@ def find_all_players()
   return all_players_array
 end
 
-
 def big_shoe_player()
   biggest_seen_player = {:shoe => 0}
   find_all_players().each do |look_at_player|
@@ -214,7 +213,6 @@ def most_points_scored()
   end 
   return most_points_seen_player[:name]
 end 
-
 
 def home_total_points()
   home_sum_array = []
@@ -243,6 +241,7 @@ def winning_team()
     return game_hash()[:home][:team_name]
   end 
 end 
+
 
 def player_with_longest_name()
   return find_all_players().keys.sort_by {|n| n.length}.pop()
