@@ -246,3 +246,15 @@ end
 def player_with_longest_name()
   return find_all_players().map{|p| p[:name]}.sort_by {|n| n.length}.pop()
 end 
+
+def player_with_most_steals()
+  find_all_players().sort_by{|p| p[:steals]}.pop()
+end 
+
+def long_name_steals_a_ton?()
+  if player_with_longest_name() == player_with_most_steals()
+    return true
+  else 
+    return false 
+  end 
+end 
